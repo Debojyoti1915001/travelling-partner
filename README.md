@@ -1,1 +1,1 @@
-# travelling-partner
+# Waste Mangement App
