@@ -3,7 +3,7 @@ const User = mongoose.model(
     "User",
     mongoose.Schema({
         name: { type: String },
-        type: { type: Number },
+        type: { type: Number },//0 for user and 1 for worker
         email: { type: String },
         password: { type: String },
         isEmailVerified: { type: Boolean, default: false },
