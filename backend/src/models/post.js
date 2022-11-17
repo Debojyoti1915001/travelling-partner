@@ -10,9 +10,9 @@ const Post = mongoose.model(
         pin: { type: String },
         state: { type: String },
         country:{type: String},
-        user:[{
+        worker:[{
             type:mongoose.Schema.Types.ObjectId,
-            ref:'user'
+            ref:'worker'
         }],
     })
 );

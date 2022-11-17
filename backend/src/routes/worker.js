@@ -5,19 +5,20 @@ const workerauth =require("../middleware/workerauth")
 
 require("../db/connection")
 
-router.get('/',(req, res)=> {
-    res.send("hello accountjs")
-});
 
-router.post("/register", workerController.register);
+router.post("/worker/register", workerController.register);
 
-router.post("/login", workerController.login);
+router.post("/worker/login", workerController.login);
 
-router.post("/is-valid-token", workerauth, workerController.isValidToken);
+router.post("/worker/is-valid-token", workerauth, workerController.isValidToken);
 
-router.post("/reset-paasword", workerauth, workerController.resetPassword);
+router.post("/worker/reset-paasword", workerauth, workerController.resetPassword);
 
-router.post("/verify-email", workerauth, workerController.verifyEmail);
+router.post("/worker/verify-email", workerauth, workerController.verifyEmail);
+
+router.get("/worker/propose/:id", workerauth, workerController.propose_get);
+
+router.get("/worker/delete/:id", workerauth, workerController.delete_get);
 
 
 module.exports = router;

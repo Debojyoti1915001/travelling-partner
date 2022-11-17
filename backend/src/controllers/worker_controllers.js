@@ -1,4 +1,5 @@
 const Worker = require("../models/worker");
+const Post = require("../models/post");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const express = require('express');
@@ -157,6 +158,33 @@ module.exports.verifyEmail = async (req, res, next) => {
     worker.isEmailVerified = true;
     await worker.save();
     return res.status(200).json(worker);
+  } catch (err) {
+    return res.status(400).send(e.toString());
+  }
+};
+module.exports.propose_get = async (req, res, next) => {
+  try {
+    const worker_id = req.worker.worker_id;
+    const id=req.params.id;
+
+    let post = await Post.findById(id);
+    const postWorkers=post.worker
+    if(!postWorkers.includes(worker_id)){
+      postWorkers.push(worker_id)
+    }
+    const updatedPost = await Post.findByIdAndUpdate(id, {
+      worker: postWorkers,
+    })
+    return res.status(200).json(updatedPost);
+  } catch (err) {
+    return res.status(400).send(e.toString());
+  }
+};
+module.exports.delete_get = async (req, res, next) => {
+  try {
+    const id=req.params.id;
+    await Post.findByIdAndDelete(id)
+    return res.status(200).json({"message":"Deleted Post"});
   } catch (err) {
     return res.status(400).send(e.toString());
   }

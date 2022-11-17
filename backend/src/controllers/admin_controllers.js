@@ -1,5 +1,6 @@
 
 const express = require('express');
+const Post = require("../models/post");
 // const multer = require('multer');
 // const multerS3 = require('multer-s3');
 // const { v4: uuidv4 } = require('uuid')
@@ -23,10 +24,33 @@ module.exports.signup_post = async (req, res) => {
   const name = req.body.name
   const password = req.body.password
   if (name === "admin" && password === "admin") {
+    res.cookie('admin', "admin", { httpOnly: true })
     res.send('/admin/profile')
   }
   res.send('/admin/signup')
 }
 module.exports.profile_get = async (req, res) => {
+  if(!req.cookies.admin=="admin"){
+    res.send({"message":"Failed to Access"})  
+  }
   res.send("admin profile")
+}
+module.exports.allpost_get = async (req, res) => {
+  if(!req.cookies.admin=="admin"){
+    res.send({"message":"Failed to Access"})  
+  }
+  const post= await Post.find({})
+  res.json(post)
+}
+module.exports.deletepost_get = async (req, res) => {
+  if(!req.cookies.admin=="admin"){
+    res.send({"message":"Failed to Access"})  
+  }
+  try {
+    const id=req.params.id;
+    await Post.findByIdAndDelete(id)
+    return res.status(200).json({"message":"Deleted Post"});
+  } catch (err) {
+    return res.status(400).send(e.toString());
+  }
 }

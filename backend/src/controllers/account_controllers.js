@@ -1,10 +1,37 @@
 const User = require("../models/user");
+const Post = require("../models/post");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const express = require('express');
+const cloudinary = require('cloudinary').v2
+cloudinary.config({
+  cloud_name: process.env.Cloud_Name,
+  api_key: process.env.API_Key,
+  api_secret: process.env.API_Secret
+})
+module.exports.allpost_get = async (req, res, next) => {
+  try {
+    const allPost = await Post.find({})
+    await res.status(200).json(allPost);
+  } catch (e) {
+    await res.status(400).send(e.toString());
+  }
+};
+module.exports.allpost_post = async (req, res, next) => {
+  try {
 
-
-
+    const picture = req.file.path
+    console.log(picture)
+    var pic = null
+    await cloudinary.uploader.upload(picture, function (err, res) {
+      pic = res.secure_url
+    })
+    console.log(pic)
+    await res.status(200).json(pic);
+  } catch (e) {
+    await res.status(400).send(e.toString());
+  }
+};
 module.exports.register = async (req, res, next) => {
   try {
     const {
