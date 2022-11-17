@@ -3,6 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Debojyoti1915001/waste-deliver.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/Debojyoti1915001/waste-deliver/issues"
+  },
+  "homepage": "https://github.com/Debojyoti1915001/waste-deliver#readme",
   "dependencies": {
     "@types/node": "^18.7.21",
     "bcrypt": "^5.1.0",
