@@ -9,7 +9,11 @@ const Post = mongoose.model(
         city: { type: Number },//0 for user and 1 for worker
         pin: { type: String },
         state: { type: String },
-        country:{type: String}
+        country:{type: String},
+        user:[{
+            type:mongoose.Schema.Types.ObjectId,
+            ref:'user'
+        }],
     })
 );
 module.exports = Post;

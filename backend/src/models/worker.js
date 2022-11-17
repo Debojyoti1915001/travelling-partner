@@ -1,10 +1,11 @@
 const mongoose = require("mongoose");
-const User = mongoose.model(
-    "User",
+const Worker = mongoose.model(
+    "Worker",
     mongoose.Schema({
         name: { type: String },
         email: { type: String },
         password: { type: String },
+        ratings: { type: Number },
         isEmailVerified: { type: Boolean, default: false },
         avatar: { type: String },
         refreshToken: { type: String, default: "" },
@@ -20,4 +21,4 @@ const User = mongoose.model(
         },
     })
 );
-module.exports = User;
+module.exports = Worker;

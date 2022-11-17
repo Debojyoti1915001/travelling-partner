@@ -25,7 +25,8 @@ app.use(
 )
 
 app.use(require('./src/routes/account'))
-
+app.use(require('./src/routes/admin'))
+app.use(require('./src/routes/worker'))
 const middleware = (req,res, next) =>{
     console.log("Hello middleware")
     next();

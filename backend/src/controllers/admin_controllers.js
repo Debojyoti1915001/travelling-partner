@@ -1,6 +1,4 @@
-const Course = require('../models/Course')
-const Videos = require('../models/Videos')
-const Post = require('../models/Post')
+
 const express = require('express');
 // const multer = require('multer');
 // const multerS3 = require('multer-s3');
