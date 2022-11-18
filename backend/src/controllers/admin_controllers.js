@@ -17,34 +17,40 @@ const Post = require("../models/post");
 
 
 
-module.exports.signup_get = async (req, res) => {
+module.exports.login_get = async (req, res) => {
   res.send("Signup")
 }
-module.exports.signup_post = async (req, res) => {
+module.exports.login_post = async (req, res) => {
   const name = req.body.name
   const password = req.body.password
   if (name === "admin" && password === "admin") {
-    res.cookie('admin', "admin", { httpOnly: true })
-    res.send('/admin/profile')
+    await res.cookie('admin', "admin", { httpOnly: true })
+    await res.send({"message":"Logged In"})
+    return
   }
-  res.send('/admin/signup')
+  await res.send({"message":"Failed to Access"})
 }
 module.exports.profile_get = async (req, res) => {
-  if(!req.cookies.admin=="admin"){
-    res.send({"message":"Failed to Access"})  
+  const token=req.cookies.admin
+  console.log(token)
+  if(token===undefined){
+    await res.send({"message":"Failed to Access"}) 
+    return 
   }
   res.send("admin profile")
 }
 module.exports.allpost_get = async (req, res) => {
-  if(!req.cookies.admin=="admin"){
-    res.send({"message":"Failed to Access"})  
+  if(req.cookies.admin===undefined){
+    await res.send({"message":"Failed to Access"})
+    return  
   }
   const post= await Post.find({})
   res.json(post)
 }
 module.exports.deletepost_get = async (req, res) => {
-  if(!req.cookies.admin=="admin"){
-    res.send({"message":"Failed to Access"})  
+  if(req.cookies.admin===undefined){
+    await res.send({"message":"Failed to Access"})  
+    return
   }
   try {
     const id=req.params.id;
@@ -53,4 +59,9 @@ module.exports.deletepost_get = async (req, res) => {
   } catch (err) {
     return res.status(400).send(e.toString());
   }
+}
+
+module.exports.logout_get = async (req, res) => {
+    await res.clearCookie('admin')
+    return res.status(200).json({"message":"logged out"});
 }
