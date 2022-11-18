@@ -1,5 +1,10 @@
 const User = require("../models/user");
+const Worker = require("../models/worker");
 const Post = require("../models/post");
+
+const { sendMailToWorker, sendMailToUser } = require('../config/nodemailer.js')
+
+
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const express = require('express');
@@ -184,6 +189,18 @@ module.exports.verifyEmail = async (req, res, next) => {
     user.isEmailVerified = true;
     await user.save();
     return res.status(200).json(user);
+  } catch (err) {
+    return res.status(400).send(e.toString());
+  }
+};
+module.exports.mailWorker = async (req, res, next) => {
+  try {
+    const user = req.user;
+    const worker_id=req.params.id
+    let worker = await Worker.findById(worker_id);
+    sendMailToWorker(worker,user,req.hostname, req.protocol)
+    sendMailToUser(worker,user,req.hostname, req.protocol)
+    return res.status(200).json({message:"Success"});
   } catch (err) {
     return res.status(400).send(e.toString());
   }
