@@ -1,0 +1,119 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-product {
+    width: 319px;
+    height: 342px;
+    background: #ffffff;
+    border: 1px solid #d9d9d9;
+    margin-right: 16px;
+    margin-bottom: 40px;
+border-radius: 10px;
+  }
+
+  .img-pro img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+.name-pro{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 20px;
+color: #000000;
+margin: 16px 12px 8px 12px;
+}
+
+.star-rating{
+    display: flex;
+}
+
+.star-rating .star{
+    color: #FBB03B;
+    margin-left: 12px ;
+    margin-bottom: 10px;
+}
+
+.star-rating .rate-value{
+    font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  margin-right: 5px;
+  color: #FBB03B;
+  margin-top: 3px;
+}
+
+.rate-no{
+    font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #171414;
+  opacity: 0.4;
+  margin-top: 3px;
+}
+
+.data-pro{
+    display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 16px;
+  
+  color: #171414;
+  opacity: 0.5;
+}
+
+.data-pro div p{
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.data-pro div img{
+  width: 20px;
+height: 20px;
+}
+
+.view{
+    display: flex;
+}
+
+.lecture{
+    display: flex;
+}
+
+.duration{
+    display: flex;
+}
+
+.price-pro{
+    display: flex;
+}
+
+.discount{
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    color: #171414;
+    margin: 0 8px 16px 16px;
+}
+
+.orig{
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration-line: line-through;
+  color: #171414;
+  opacity: 0.6;
+ 
+}

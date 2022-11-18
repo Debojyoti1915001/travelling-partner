@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.rightside-img{
+    margin-right: 24px;
+}
+
+.pro-icon{
+    display: flex;
+    margin-bottom: 24px;
+    flex: end;
+    align-items: center;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 22px;
+color: #171414;
+text-align: center;
+}
+
+.pro-icon p span{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 22px;
+color: #171414;
+margin-left: 5px;
+}
+
+.thumbsup{
+    opacity: 0.5;
+}
+
+.pro-icon img{
+    margin-left: 12px;
+    margin-right: 5px;
+}

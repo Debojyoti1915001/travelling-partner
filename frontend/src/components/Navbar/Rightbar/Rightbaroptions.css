@@ -1,0 +1,30 @@
+.right-mentors{
+    display: flex;
+    margin-left: 24px;
+    margin-bottom: 10px;
+    margin-top: 12px;
+}
+
+.profile-pics{
+    margin-right: 12px;
+}
+
+.data h4{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    color: #171414;
+
+}
+
+.data p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 22px;
+    color: #171414;
+    opacity: 0.5;
+}

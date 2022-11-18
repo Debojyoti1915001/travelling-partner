@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+.product-main {
+  width: 319px;
+  height: 342px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  margin-right: 16px;
+  margin-bottom: 40px;
+}
+
+.product-img img{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.product-name {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin: 16px 12px;
+}
+
+.product-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  color: #171414;
+  opacity: 0.5;
+}
+
+.product-data div p{
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.product-data div img{
+ width: 20px;
+ height: 20px;
+}
+
+.space {
+  margin-left: 5px;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 20px;
+color: #171414;
+}
+
+.views {
+  display: flex;
+}
+
+.lectures {
+  display: flex;
+}
+
+.durations {
+  display: flex;
+}
+
+.product-line {
+  width: 100%;
+  border: 0.5px solid #d9d9d9;
+}
+
+.product-description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-rate {
+  display: flex;
+  margin-left: 16px;
+  margin-top: 10px;
+}
+
+.product-price {
+  display: flex;
+  margin-top: 12px;
+}
+
+.original {
+  margin: 0 16px 0 8px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration-line: line-through;
+  color: #171414;
+  opacity: 0.6;
+}
+
+.discounted {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  color: #171414;
+}
+
+.product-rate .rating {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  margin-right: 5px;
+  color: #fbb03b;
+}
+
+.rating-total {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #171414;
+  opacity: 0.4;
+}

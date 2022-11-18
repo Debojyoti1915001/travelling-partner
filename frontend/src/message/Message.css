@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_msgfeed{
+    display: flex;
+    overflow: hidden;
+}
+
+.side_msg{
+    width: 18.65%; 
+    height: 856px ;
+}
+
+.bfeed{
+    margin-top: 32px;
+}
+
+.main_msg{
+    background-color: #F9F9F9;
+    width: 81.349%;
+    height: 856px;
+    display: flex;
+}

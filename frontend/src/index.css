@@ -1,0 +1,8 @@
+*::-webkit-scrollbar {
+    display: none;
+  }
+
+  *{
+    font-family: "Poppins";
+  font-style: normal;
+  }

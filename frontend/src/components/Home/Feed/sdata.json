@@ -1,0 +1,18 @@
+[
+    {
+        "imgsrc": "./images/fpic1.png",
+        "uname": "Zach Hiwai",
+        "mainimg": "./images/main2.png",
+        "about": "Educator at Modern High School",
+        "intro": "Researchers developed a machine learning model capable of estimating national weekly opioid overdose mortality trends in near real-time using proxy data sources such as public health information and law enforcement data."
+    },
+
+    {
+        "imgsrc": "./images/fpic2.png",
+        "uname": "Physics Wallah",
+        "mainimg": "./images/main1.png",
+        "about": "Indian Sensation",
+        "intro": "We're from the students, by the students and we stand with students at the time of needs. #PWappealNTA to give a fair chance to students who are preparing along with fighting all difficulties in their lives to just prepare for ..."
+    }
+   
+]

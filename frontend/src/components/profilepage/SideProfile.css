@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sideprofile-main{
+    width: 282px;
+}
+
+.side-top{
+    margin-left: 20px;
+}
+
+.partition{
+    border: 0.5px solid #E6E6E6 ;
+    width: 242px;
+    margin: 24px 0 12px 20px;
+}
+
+.side-post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(230, 230, 230, 0.17);
+}
+
+.post-opt{
+    margin-left: 20px;
+}
+
+.side-post h2{
+    padding: 12px 0;
+   margin-right: 23px;
+   font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+}
+
+.side-students{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(230, 230, 230, 0.17);
+}
+
+.side-students h2{
+    padding: 12px 0;
+   margin-right: 23px;
+   font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+}
+
+.student-opt{
+    margin-left: 60px;
+}

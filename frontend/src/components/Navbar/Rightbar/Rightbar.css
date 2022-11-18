@@ -1,0 +1,15 @@
+.rightbar{
+    position: sticky;
+}
+
+.rightbar h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #000000;
+    margin-top: 32px;
+    margin-left: 24px;
+    margin-bottom: 12px;
+}

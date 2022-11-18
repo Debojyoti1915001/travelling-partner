@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.sign-page{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sign-left{
+    margin-left: 11.64%;
+}
+
+.sign-main h1{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+}
+
+.sign-main p{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #171414;
+    opacity: 0.5;
+    margin: 3px 0 16px 0;
+}
+
+.checkbox-container{
+    display: flex;
+    align-items: center;
+    margin-top: -5.5px;
+    margin-bottom: -5.5px;
+}
+
+
+.checkbox-container p {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #171414;
+    opacity: 0.6;
+    padding: 16px;
+
+}
+
+.signup form label{
+    font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+}
+
+
+::placeholder{
+    opacity: 0.3;
+}
+
+input[type=checkbox]{
+    width: 18px;
+    height: 18px;
+    color: white;
+}
+
+input[type=checkbox]:checked {
+    accent-color: #1AB586; 
+    color: white;
+  }
+
+input[type='checkbox']:after {
+      box-shadow: none ;
+      color: white;
+  }
+
+input[type=text], select {
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    padding: 12px 20px;
+    margin: 8px 0 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+
+
+  input[type=password], select {
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+
+  input[type=email], select {
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    padding: 12px 20px;
+    margin: 8px 0 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    background: #DC3545;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0 20px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .signbtn{
+    font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 25px;
+}
+
+
+  .haveacnt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.haveacnt li{
+    text-decoration: none;
+    list-style: none;
+    font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+color: #DC3545;
+margin-left: 10px;
+cursor: pointer;
+}
+
+.haveacnt p{
+    font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+color: #828282;
+}
+
+

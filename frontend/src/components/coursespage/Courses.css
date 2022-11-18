@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.courses-head{
+    position: relative;
+}
+
+.courses-head img{
+  opacity: 0.49;
+  width: 1600px;
+}
+
+.course-heading{
+  position: absolute;
+  margin: auto;
+  top: 137px;
+  margin-left: 280px;
+}
+
+.course-heading h1{
+   font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+color: #171414;
+display: flex;
+}
+
+.course-inp{
+  display: flex;
+}
+
+.course-search{
+  width: 702px;
+  height: 56px;
+  background: #DC3545;
+border-radius: 2px;
+display: flex;
+align-items: center;
+}
+
+.course-search img{
+  color: white;
+  width: 26px;
+  height: 26px;
+  margin-left: 18px;
+}
+
+.course-search p{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+letter-spacing: 0.01em;
+margin-left: 10px;
+color: #FFFFFF;
+}
+
+.work-icon{
+  margin-left: 19px;
+  margin-bottom: -5px;
+  color: white;
+}
+
+.search-btn button{
+  padding: 16px 45px;
+  background-color: white;
+  color: #1AB586;
+  letter-spacing: 0.01em;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+outline: 0;
+border: 1px solid #DC3545;
+}
+
+.sort{
+  margin-top: 111px;
+  margin-bottom: 32px;
+}
+
+.sort p{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+color: #171414;
+}
+
+.sortform {
+  display: flex;
+}
+
+
+.sort-form{
+  margin-left: 95px;
+}
+
+#popular{
+  width: 200px;
+  margin-right: 30px;
+  margin-bottom: 32px;
+  border-radius: 0px;
+padding: 10px 24px;
+gap: 40px;
+border: 1px solid #E6E6E6;
+
+}
+
+#grade{
+  width: 160px;
+  margin-bottom: 32px;
+  border-radius: 0px;
+padding: 10px 24px;
+gap: 40px;
+border: 1px solid #E6E6E6;
+}
+
+.course-products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-line {
+    display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 0.5px solid #d9d9d9;
+  width: 1170px;
+  margin-left: 174px;
+  margin-bottom: 41px;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 90px;
+}
+
+.page {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: rgba(23, 20, 20, 0.5);
+}
+
+.pages {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  display: flex;
+  color: #171414;
+}
+
+.pages p {
+  margin-right: 16px;
+}
+
+.nxt-btn button {
+  padding: 4px 24px;
+  font-style: normal;
+  background-color: white;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #171414;
+  outline: none;
+  border: 1px solid #d9d9d9;
+  cursor: pointer;
+}

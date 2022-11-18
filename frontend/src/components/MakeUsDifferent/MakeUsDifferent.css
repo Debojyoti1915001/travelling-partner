@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-diff{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 54px;
+}
+
+.boy{
+    position: relative;
+    margin-top: 300px;
+    margin-left: 70px;
+    z-index: 2;
+}
+
+.vector{
+    position: absolute;
+    margin-bottom: -1000px;
+    margin-left: -450px;
+    z-index: 1;
+}
+
+.para{
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+.intr{
+    margin-top: 500px;
+    margin-left: 71px;
+    padding: 20px;
+}
+
+.intr h1{
+    font-weight: 600;
+font-size: 42px;
+line-height: 63px;
+padding: 10px;
+
+}
+
+.intr h1 span{
+    color: #1AB586;
+}
+
+.intr h3{
+    font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+padding: 10px;
+color: rgba(0,0,0,0.5);
+}
+
+.intr h3 span{
+    color: #DC3545;
+}
+
+.intr h4{
+    font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+padding: 10px;
+/* identical to box height */
+
+
+color: #1AB586;
+
+}
+
+.intr p{
+    font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+margin-left: 45px;
+
+color: #000000;
+}

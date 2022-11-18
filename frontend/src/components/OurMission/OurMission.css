@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-miss {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2px;
+  width: 100%;
+  height: 729px;
+  left: 0px;
+  top: 1736px;
+  background: #171414;
+  margin-top: 200px;
+  color: white;
+  position: absolute;
+}
+
+.miss-left {
+  margin-top: 312px;
+  margin-left: 40px;
+  z-index: 2;
+}
+
+.miss-left .one1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  bottom: 350px;
+  left: 150px;
+}
+
+.miss-left .two2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  bottom: 170px;
+
+}
+
+.miss-left .para1 {
+  width: 388px;
+  height: 82px;
+  background: rgba(44, 42, 42, 0.18);
+  box-shadow: 0px 2px 36px rgba(0, 0, 0, 0.25);
+  border-radius: 36px;
+  text-align: center;
+  padding: 20px;
+}
+
+.miss-left .para2 {
+  width: 474px;
+  height: 132px;
+  left: 905px;
+  top: 2162px;
+  text-align: center;
+  padding: 20px;
+  background: rgba(44, 42, 42, 0.18);
+  box-shadow: 0px 2px 36px rgba(0, 0, 0, 0.25);
+  border-radius: 36px;
+}
+
+.miss-left .one {
+  width: 74px;
+  height: 74px;
+  background: #1ab586;
+  border: 2px solid #f5f5f5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 54px;
+}
+
+.miss-left .two {
+  width: 74px;
+  height: 74px;
+  background: #1ab586;
+  border: 2px solid #f5f5f5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 54px;
+}
+
+.miss-left p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.miss-center {
+  text-align: center;
+  z-index: 1;
+}
+
+
+.miss-center h1 {
+  padding-top: 64px;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 63px;
+}
+
+.miss-center .vision {
+  color: #dc3545;
+}
+
+.miss-center .mission {
+  color: #1ab586;
+}
+
+.miss-right {
+  margin-top: 312px;
+  margin-right: 100px;
+  z-index: 2;
+}
+
+.miss-right p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.miss-right .three {
+  width: 74px;
+  height: 74px;
+  background: #1ab586;
+  border: 2px solid #f5f5f5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 54px;
+}
+
+.miss-right .four {
+  width: 74px;
+  height: 74px;
+  background: #1ab586;
+  border: 2px solid #f5f5f5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 54px;
+}
+
+.miss-right .para3 {
+  width: 388px;
+  height: 82px;
+  left: 240px;
+  top: 2048px;
+  text-align: center;
+  background: rgba(44, 42, 42, 0.18);
+  box-shadow: 0px 2px 36px rgba(0, 0, 0, 0.25);
+  border-radius: 36px;
+  padding: 20px;
+}
+
+.miss-right .para4 {
+  width: 474px;
+  height: 132px;
+  left: 905px;
+  top: 2162px;
+  text-align: center;
+  background: rgba(44, 42, 42, 0.18);
+  box-shadow: 0px 2px 36px rgba(0, 0, 0, 0.25);
+  border-radius: 36px;
+  padding: 20px;
+}
+
+.miss-right .three3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  bottom: 350px;
+  right: 150px;
+}
+
+.miss-right .four4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  bottom: 170px;
+  right: 46px;
+}

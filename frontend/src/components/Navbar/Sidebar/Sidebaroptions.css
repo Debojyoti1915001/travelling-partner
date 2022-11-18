@@ -1,0 +1,22 @@
+.sidebar-row{
+    display: flex;
+     align-items: center;
+     padding: 13px;
+     margin-left: 50px;
+     margin-top: 8px;
+     position: sticky;
+     cursor: pointer;
+}
+
+.sidebar-row p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #171414;
+    opacity: 0.4;
+    margin-left: 20px;
+    position: sticky;
+}
+

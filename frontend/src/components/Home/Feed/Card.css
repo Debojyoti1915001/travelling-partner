@@ -1,0 +1,177 @@
+.card {
+  width: 882px;
+  height: 630px;
+  background: #ffffff;
+  border-radius: 2px;
+  margin-bottom: 8px;
+  margin-left: 32px;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.cardtop-left {
+  display: flex;
+  margin-top: 32px;
+}
+
+.cardtop-left img {
+  margin-right: 16px;
+}
+
+.cardtop-right {
+  margin-top: 32px;
+}
+
+.cardtop-right p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: #171414;
+  opacity: 0.6;
+}
+
+.cardtop-right img {
+  margin-left: 69px;
+}
+
+.intro-name {
+  display: flex;
+}
+
+.intro-name {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #171414;
+}
+
+.intro-name img {
+  width: 6px;
+  height: 6px;
+  margin: 7px 0 12px 12px;
+}
+
+.intro-name span {
+  margin-left: 12px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #dc3545;
+}
+
+.about {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: #171414;
+  opacity: 0.6;
+}
+
+.card-mid p {
+  margin: 20px 32px 16px 32px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #171414;
+}
+
+.card-mid img {
+  margin: 0 32px 0 32px;
+}
+
+.card-bottom {
+  display: flex;
+  align-items: center;
+  
+}
+
+
+.cmnt-img {
+  margin-right: 16px;  
+  margin-left: 32px;
+  cursor: pointer;
+}
+
+.comment {
+  display: flex;
+  align-items: center;
+  
+}
+
+.comment img{
+ margin-left: 408px;
+}
+
+.emoji{
+  position: absolute;
+  left: 412px;
+  cursor: pointer;
+}
+
+.pictures{
+  position: absolute;
+  left: 450px;
+  cursor: pointer;
+}
+
+.comment form input {
+  display: flex;
+  align-items: center;
+  border: 0;
+  outline: 0;
+  padding: 0px 10px;
+  width: 490px;
+  height: 42px;
+  color: rgba(23, 20, 20,0.5);
+  background-color: rgba(23, 20, 20,0.08);
+  border-radius: 8px;
+  position: relative;
+}
+
+.share p {
+  justify-content: space-evenly;
+  margin-left: 8px;
+  width: 19px;
+  height: 22px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 22px;
+  color: #171414;
+}
+
+.share img{
+  margin-left: 34px;
+  cursor: pointer;
+}
+
+.share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -0px;
+}
+
+.xline{
+  
+  width: 818px;
+  height: 2px;
+  background-color: #E6E6E6;
+  margin: 20px 0 16px 32px;
+}

@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.profile-details h1 {
+  margin-right: 345px;
+}
+
+.profile-details span {
+  color: #dc3545;
+}
+
+.skipbtn_div {
+  float: right;
+  top: 55px;
+  margin-right: 80px;
+}
+
+.skipbtn {
+  width: 74px;
+  height: 34px;
+  background: rgba(220, 53, 69, 0.12);
+  border-radius: 8px;
+  border: 0px;
+  color: #dc3545;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  cursor: pointer;
+}
+
+.full-name {
+  display: flex;
+  margin-top: 40px;
+}
+
+.first-name {
+  margin-right: 21.96px;
+  width: 320px;
+}
+
+.last-name {
+  width: 320px;
+}
+
+.gender-dob {
+  display: flex;
+}
+
+.gender {
+  width: 320px;
+  margin-right: 21.96px;
+}
+
+.dob {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dob label {
+  margin-bottom: 11px;
+}
+
+.dob input {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+.width_large{
+    width: 660px;
+}
+
+.profile-details button {
+  margin-top: 81px;
+  background-color: #dc3545;
+  padding: 10px 26px;
+  color: white;
+  border: 0px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  margin-left: 454px;
+}
+
+.profile-details button p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+}

@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.abovefoot {
+    text-align: center;
+    position: relative;
+    color: white;
+    overflow-x: hidden;
+    
+}
+
+.subscribe{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    margin-top: 168px;
+
+}
+
+.subscribe p{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    opacity: 0.7;
+}
+
+.subscribe h2{
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 63px;
+    color: white;
+}
+
+
+.i5{
+    margin-top: 500px;
+    margin-bottom: 500px;
+    padding: auto;
+    
+    overflow: visible;
+}
+
+.subscribe label input{
+    border-radius: 36px;
+    padding: 18px;
+    padding-left: 32px;
+    width: 450px;
+    border: none;
+    margin-top: 30px;
+    color: black;
+    
+}
+
+
+.subscribe label{
+    position: relative;
+    text-align: center;
+    display:table-cell;
+    vertical-align:middle;
+    display: grid;
+   justify-content: center;
+}
+
+
+
+.subscribe label button{
+    position: absolute;
+    top: 30px;
+    bottom: 10px;
+    right: 65px;
+    border-radius: 36px;
+    background-color:#DC3545;
+    padding: 18px;
+    padding-left: 47px;
+    padding-right: 47px;
+    border: none;
+    color: white;
+    cursor: pointer; 
+    
+}
