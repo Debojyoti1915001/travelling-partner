@@ -3,7 +3,7 @@ const Post = mongoose.model(
     "Post",
     mongoose.Schema({
         name: { type: String },
-        url:{type: String},
+        pic:{type: String},
         percentageWaste:{type: Number},
         locality: { type: String },
         city: { type: Number },//0 for user and 1 for worker

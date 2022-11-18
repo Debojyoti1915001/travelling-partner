@@ -24,7 +24,7 @@ module.exports.allpost_get = async (req, res, next) => {
 };
 module.exports.allpost_post = async (req, res, next) => {
   try {
-
+    const {name,locality,city,pin,state,country}=req.body
     const picture = req.file.path
     console.log(picture)
     var pic = null
@@ -32,6 +32,9 @@ module.exports.allpost_post = async (req, res, next) => {
       pic = res.secure_url
     })
     console.log(pic)
+    const post = await Post.create({
+      name,locality,city,pin,state,country,pic
+    });
     await res.status(200).json(pic);
   } catch (e) {
     await res.status(400).send(e.toString());
@@ -43,20 +46,11 @@ module.exports.register = async (req, res, next) => {
       name,
       email,
       password,
-      confirmPassword,
-      type,
-      avatar,
+      confirmPassword
     } = req.body;
     console.log(req.body)
     if (!(name && email && password && confirmPassword)) {
       return res.status(400).send("Email and password needed");
-    }
-    //0 student 1 mentor 2 admin
-    if (!(type === 0 || type === 1 || type === 2)) {
-
-      return res
-        .status(400)
-        .send("You can only register as student or mentor or admin");
     }
     const oldUser = await User.findOne({ email });
     if (oldUser) {
@@ -70,8 +64,6 @@ module.exports.register = async (req, res, next) => {
       email: email,
       password: encryptedPassword,
       isEmailVerified: true,
-      type: type,
-      avatar: avatar,
       isActive: false,
       isDelete: false,
       createdOn: Date.now().toString(),
