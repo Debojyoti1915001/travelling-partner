@@ -20,7 +20,9 @@
 }
 
 .cardtop-left img {
-  margin-right: 16px;
+  height: 54%;
+  width: 142%;
+  margin-right: -237px;
 }
 
 .cardtop-right {

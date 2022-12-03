@@ -11,48 +11,60 @@ const PostPopup = (props) => {
   return (
     <>
       <div className="main-pop">
-      <form action="/post" method="POST">
-        <div className="popup-main">
-          <div className="popup-header">
-            <h1>Add Photos</h1>
-            <div className="popupbtn">
-              <button>
-                <Add fontSize="small" />
-                <p>Add pictures/videos</p>
-              </button>
-              <div className="closeicon" onClick={props.data}><Close/></div>
-            </div>
-          </div>
-          <div className="popup-mid">
-            <div className="popup-left">
-           
-              <textarea
-                className="popup-text"
-                placeholder="Want to describe ..."
-                name="desc"
-              ></textarea>
-              
-              <div className="location">
-                <Location className="location-icon" fontSize="small" />
-                <p> Location</p>
-              </div>
-            </div>
-            <div className="popup-right">
-              <div>
-                <button className="addicon">
-                  <AddIcon />
+        <form action="/all-post" method="POST" enctype="multipart/form-data">
+          <div className="popup-main">
+            <div className="popup-header">
+              <h1>Add Photos</h1>
+              <div className="popupbtn">
+                <button>
+                  <input type="file" placeholder="Add Photo" name="photo"/>
                 </button>
+                <div className="closeicon" onClick={props.data}><Close /></div>
               </div>
-              <div>
-                <button className="clearbtn">Clear all</button>
+            </div>
+            <div className="popup-mid">
+              <div className="location">
+              <input
+              // type="text"
+                  className="location-icon"
+                  placeholder="Name"
+                  name="name"
+                ></input>
+                <br/>
+                <input
+                // type="text"
+                  className="location-icon"
+                  placeholder="Locality"
+                  name="locality"
+                ></input>
+                <br/>
+                <input
+                // type="text"
+                  className="location-icon"
+                  placeholder="City"
+                  name="city"
+                ></input>
+                <br/>
+                <input
+                // type="text"
+                  className="location-icon"
+                  placeholder="Pin"
+                  name="pin"
+                ></input>
+                <br/>
+                <input
+                // type="text"
+                  className="location-icon"
+                  placeholder="Country"
+                  name="country"
+                ></input>
               </div>
-              <p>0 file(s) selected</p>
+
+            </div>
+            <div className="popup-footer">
+              <button className="popupost">Post</button>
             </div>
           </div>
-          <div className="popup-footer">
-            <button className="popupost">Post</button>
-          </div>
-        </div>
         </form>
       </div>
     </>

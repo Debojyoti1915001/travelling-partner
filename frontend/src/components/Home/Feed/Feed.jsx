@@ -93,7 +93,7 @@ const Feed = ({data}) => {
                     
                     <Card 
                         id  = {item._id}
-                        imgsrc = {sdata[0].imgsrc}
+                        imgsrc = {item.pic}
                         uname = {sdata[0].uname}
                         mainimg = {sdata[0].mainimg}
                         about = {sdata[0].about}

@@ -1,7 +1,7 @@
 const User = require("../models/user");
 const Worker = require("../models/worker");
 const Post = require("../models/post");
-
+const axios =require('axios');
 const { sendMailToWorker, sendMailToUser } = require('../config/nodemailer.js')
 
 
@@ -25,6 +25,8 @@ module.exports.allpost_get = async (req, res, next) => {
 module.exports.allpost_post = async (req, res, next) => {
   try {
     const {name,locality,city,pin,state,country}=req.body
+    console.log(req.body)
+    console.log(req.file)
     const picture = req.file.path
     console.log(picture)
     var pic = null
@@ -32,11 +34,19 @@ module.exports.allpost_post = async (req, res, next) => {
       pic = res.secure_url
     })
     console.log(pic)
-    
+    var percentageWaste;
+    await axios.get(`http://127.0.0.1:8000/garbage_model?text=${pic}`)
+    .then((res) => {
+      console.log(res.data)
+      percentageWaste=res.data.value
+    })
+    .catch((error) => {
+      console.error(error)
+    })
     const post = await Post.create({
-      name,locality,city,pin,state,country,pic
+      name,locality,city,pin,state,country,pic,percentageWaste
     });
-    await res.status(200).json(pic);
+    await res.status(200).json(post);
   } catch (e) {
     await res.status(400).send(e.toString());
   }
