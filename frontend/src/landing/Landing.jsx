@@ -14,7 +14,6 @@ const Landing = () => {
     <>
       <Navbar />
       <Intro />
-      <Sliding />
       <Different />
       <OurMission />
       <HowItWorks />

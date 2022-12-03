@@ -7,7 +7,6 @@ const Different = () => {
     <div className="main-diff">
         <div className="intr">
             <h1>What makes us <span>different?</span></h1>
-            <h3>Learning has never been easier! Well to make it interesting and exciting we have brought with some <span>GOALS</span></h3>
             <div className="para">
                 <img src="./images/arrow.png" alt="" />
                 <h4>INTEREST & MOTIVATION</h4>
