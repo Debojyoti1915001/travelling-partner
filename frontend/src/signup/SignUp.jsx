@@ -23,17 +23,17 @@ const SignUp = () => {
 
   const collectData = async (e) => {
     e.preventDefault();
-
     const { name, email, password, confirmPassword } = user;
-    
-     const res = await fetch("/register",{
+    const url = "http://localhost:8080/register";
+     const res = await fetch(url,{
       method: "POST",
       headers:{
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        name, email, password, confirmPassword
+        name, email, password, confirmPassword,type:0
       })
+      
      });
 
      const data = await res.json();

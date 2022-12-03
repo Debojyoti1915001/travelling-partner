@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Courses.css";
 import Navbar from "../Home/HomeNavbar/Navbar";
 import Products from "./Products";
 import Product from "./Product";
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
+import axios from 'axios';
 
 const Courses = () => {
+  const [courses, setCourses] = useState([]);
+  axios.get('http://localhost:8080/allCourse')
+    .then((res) => {
+      setCourses(res.data)
+    })
+    .catch((error) => {
+      console.error(error)
+    })
+    // console.log(courses)
   return (
     <>
       <Navbar />
@@ -16,7 +26,7 @@ const Courses = () => {
           <div className="course-inp">
             <div className="course-search">
               <div className="work-icon">
-                <WorkOutlineIcon/>
+                <WorkOutlineIcon />
               </div>
               <p>Search Courses</p>
             </div>
@@ -39,7 +49,22 @@ const Courses = () => {
             </select>
           </div>
         </div>
-        <div className="course-products">
+           {(() => {
+              let row = []
+              let cur=[]
+              for (var i = 0; i < courses.length; i++) {
+                  if(i%4===0){
+                    row.push(<div className="course-products">{cur}</div>)
+                    cur=[]  
+                  }
+                  cur.push(<Product src="./images/product6.png" data={courses[i]} />)
+              }
+              if(cur.length)row.push(<div className="course-products">{cur}</div>)
+              return row
+
+           })()}
+        
+        {/* <div className="course-products">
           <Products src="./images/product1.png" />
           <Products src="./images/product2.png" />
           <Products src="./images/product3.png" />
@@ -47,10 +72,10 @@ const Courses = () => {
         </div>
         <div className="course-products">
           <Product src="./images/product4.png" />
-          <Product src="./images/product5.png" />
+          <Product src="./images/product5.png" /> 
           <Product src="./images/product6.png" />
           <Product src="./images/product6.png" />
-        </div>
+        </div> */}
       </div>
       <div className="bottom-line"></div>
       <div className="bottom">

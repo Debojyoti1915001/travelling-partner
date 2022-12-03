@@ -1,0 +1,8 @@
+pip~=22.0.4
+setuptools~=58.1.0
+numpy~=1.21.6
+tensorflow~=2.9.2
+
+cd C:\Projects\waste-deliver\Garb_Net
+.\deploy\Scripts\activate
+uvicorn main:app

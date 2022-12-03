@@ -1,8 +1,12 @@
-import React from "react";
+import userEvent from "@testing-library/user-event";
+import React,{useState} from "react";
 import "./MainProfile.css";
 import ProfilePosts from "./ProfilePosts";
 
-const MainProfile = () => {
+const MainProfile = (props) => {
+  // const [name, setName] = useState("");
+  // setName(props.user)
+  console.log(props.user)
   return (
     <>
       <div className="main-profile">
@@ -24,8 +28,8 @@ const MainProfile = () => {
               src="./images/display-pic.png"
               alt=""
             />
-            <h3>Susainne Jamiya</h3>
-            <p className="pro-mail">@susainne1234</p>
+            {/* <h3>{props.user.name}</h3> */}
+            {/* <p className="pro-mail">@{props.user.avatar}</p> */}
             <p className="pro-intro">
               I am currently employed by the General Capital Corporation
               Company, an opportunity I learned through the College of Business’

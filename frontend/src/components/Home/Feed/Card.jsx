@@ -16,9 +16,10 @@ const Card = (props) => {
                         </div>
                         <div className="about">
                             <p>{props.about}</p>
+                            
                         </div>
+                        
                     </div>
-
                 </div>
                 <div className="cardtop-right">
                     <img src="./images/dots.png" alt="" />
@@ -26,7 +27,10 @@ const Card = (props) => {
                 </div>
             </div>
             <div className="card-mid">
-                <p>{props.intro}</p>
+                <form action={"/updatepost/"+props.id} method="POST">
+                <textarea name="desc">{props.intro}</textarea>
+                <button className='post'>Edit</button>
+                </form>
                 <img src={props.mainimg} alt="" />
             </div>
             <div className='xline'></div>
@@ -47,6 +51,7 @@ const Card = (props) => {
                     <img src="./images/share.png" alt="" />
                     <p>45</p>
                 </div>
+                
             </div>
 
         </div>

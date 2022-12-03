@@ -11,6 +11,7 @@ const PostPopup = (props) => {
   return (
     <>
       <div className="main-pop">
+      <form action="/post" method="POST">
         <div className="popup-main">
           <div className="popup-header">
             <h1>Add Photos</h1>
@@ -24,10 +25,13 @@ const PostPopup = (props) => {
           </div>
           <div className="popup-mid">
             <div className="popup-left">
+           
               <textarea
                 className="popup-text"
                 placeholder="Want to describe ..."
+                name="desc"
               ></textarea>
+              
               <div className="location">
                 <Location className="location-icon" fontSize="small" />
                 <p> Location</p>
@@ -49,6 +53,7 @@ const PostPopup = (props) => {
             <button className="popupost">Post</button>
           </div>
         </div>
+        </form>
       </div>
     </>
   );

@@ -12,8 +12,8 @@ import PostPopup from "../components/Home/Feed/PostPopup";
 const Home = () => {
   const [data, setData] = useState("");
 
-  useEffect(() => {
-    const url = "http://localhost:8080/admin/post/";
+  useEffect(() => { 
+    const url = "http://localhost:8080/all-post";
 
     const fetchData = async () => {
       try {
@@ -29,7 +29,7 @@ const Home = () => {
     fetchData();
   }, []);
   console.log(data)
-  return (data.length?
+  return (
     <>
       <HomeNavbar />
       <Stack direction="row">
@@ -39,18 +39,6 @@ const Home = () => {
         <Feed data={data} />
         <Rightbar />
       </Stack>
-    </>
-    :<>
-    <HomeNavbar />
-    <Stack direction="row">
-      <div>
-        <Sidebar />
-      </div>
-      <div style={{color: "red",marginLeft:"30%",marginRight:"30%",fontSize: "40px" }}>
-        Empty
-      </div>
-      <Rightbar />
-    </Stack>
   </>
   );
 };

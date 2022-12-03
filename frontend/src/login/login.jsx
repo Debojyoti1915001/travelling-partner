@@ -1,17 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 import './login.css';
+import axios from 'axios';
 import { NavLink, useNavigate } from 'react-router-dom';
+import { useCookies } from 'react-cookie';
 
 const Login = () => {
     const navigate =useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-
+    // const [jwt, setJwt] = useState(storedJwt || null);
+    // const storedJwt = localStorage.getItem('xauthtoken');
+    const [cookies, setCookie] = useCookies(['xauthtoken']);
+    
     const loginUser = async (e) => {
         e.preventDefault();
 
-        const res = await fetch("/login",{
+
+        const url = "http://localhost:8080/login";
+        const res = await fetch(url,{
             method: "POST",
+            // credentials: 'include',
+            // withCredentials: true,
             headers:{
               "Content-Type": "application/json"
             },
@@ -19,16 +28,27 @@ const Login = () => {
                 email, password
             })
            });
-
+           
            const data = await res.json();
-
+           console.log(data)
+           localStorage.setItem('xauthtoken', data.token);
+        //    setJwt(data.token);
+           setCookie('xauthtoken', data.token);
            if(res.status === 400 || !data){
-             window.alert("Invalid Credentials");
+            navigate("/")
            }else {
-            navigate("/home")
+            if (
+                cookies 
+              ) {
+                console.log("navigate")
+                return navigate("/dashboard");
+              }else{
+                return navigate("/");
+              }
+              //eslint-disable-next-line
+            }
            }
 
-    }
 
 
   return (

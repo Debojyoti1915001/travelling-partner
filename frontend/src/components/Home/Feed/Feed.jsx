@@ -4,7 +4,19 @@ import Card from './Card'
 import sdata from './sdata.json'
 import PostPopup from './PostPopup'
 
-const Feed = () => {
+const Feed = ({data}) => {
+    console.log(data)
+    const [values, setValues] = useState({
+        desc: '',
+      });
+      
+    
+      const handleChange = e => {
+        setValues(oldValues => ({
+          ...oldValues,
+          [e.target.name]: e.target.value
+        }));
+      }
     const [popup, setPopup]=useState(false);
     const handlePopup =()=>{
         setPopup(!popup)
@@ -13,15 +25,16 @@ const Feed = () => {
     const closePopup = ()=>{
         setPopup(false)
     }
-    return (
-        <>
-            
+    if( data.length===0){
+        return(
+            <>
             <div className="main-feed">
                 <div className="feed">
                     <div className="feed-top">
                         <img className='fimg' src="./images/feedpic.png" alt="" />
-                        <form action="">
-                            <input className='ftext' type="text" placeholder='What you would like to share?' />
+                        <form action="/post" method="POST">
+                            <input id="desc" name="desc" className='ftext' type="text" placeholder='What you would like to share?' value={values.desc}
+                            onChange={handleChange} />
                         </form>
                     </div>
                     <div className="feed-bottom">
@@ -40,25 +53,59 @@ const Feed = () => {
                         <button onClick={handlePopup} className='post'>Post</button>
                     </div>
                 </div>
-                <Card 
-                    imgsrc = {sdata[0].imgsrc}
-                    uname = {sdata[0].uname}
-                    mainimg = {sdata[0].mainimg}
-                    about = {sdata[0].about}
-                    intro = {sdata[0].intro}
-                />
-                 <Card 
-                    imgsrc = {sdata[1].imgsrc}
-                    uname = {sdata[1].uname}
-                    mainimg = {sdata[1].mainimg}
-                    about = {sdata[1].about}
-                    intro = {sdata[1].intro}
-                />
-            </div>
-            {popup? <PostPopup data={closePopup}/> : ""}
-        </>
-    )
+                <div style={{color: "red",marginLeft:"30%",marginRight:"30%",fontSize: "40px" }}>
+                    Empty
+                </div>
+                </div>
+            </>
+        )
+    }else{
+        return (
+            <>
+                
+                <div className="main-feed">
+                    <div className="feed">
+                        <div className="feed-top">
+                            <img className='fimg' src="./images/feedpic.png" alt="" />
+                            <form action="/post" method="POST">
+                            <input id="desc" name="desc" className='ftext' type="text" placeholder='What you would like to share?' value={values.desc}
+                            onChange={handleChange} />
+                        </form>
+                        </div>
+                        <div className="feed-bottom">
+                            <div className="photo">
+                                <img src="./images/photo.png" alt="" />
+                                <p>Photo</p>
+                            </div>
+                            <div className="video">
+                                <img src="./images/video.png" alt="" />
+                                <p>Video</p>
+                            </div>
+                            <div className="article">
+                                <img src="./images/article.png" alt="" />
+                                <p>Article</p>
+                            </div>
+                            <button onClick={handlePopup} className='post'>Post</button>
+                        </div>
+                    </div>
+                    
+                    { data.map((item, i) => (
+                    
+                    <Card 
+                        id  = {item._id}
+                        imgsrc = {sdata[0].imgsrc}
+                        uname = {sdata[0].uname}
+                        mainimg = {sdata[0].mainimg}
+                        about = {sdata[0].about}
+                        intro = {item.desc}
+                    />
+                    ))}   
+                </div>
+                {popup? <PostPopup data={closePopup}/> : ""}
+            </>
+        )
+    }
+    
 }
-
 
 export default Feed
