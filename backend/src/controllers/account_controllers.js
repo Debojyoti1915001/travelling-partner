@@ -32,6 +32,7 @@ module.exports.allpost_post = async (req, res, next) => {
       pic = res.secure_url
     })
     console.log(pic)
+    
     const post = await Post.create({
       name,locality,city,pin,state,country,pic
     });
