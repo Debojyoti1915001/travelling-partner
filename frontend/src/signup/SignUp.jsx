@@ -54,9 +54,7 @@ const SignUp = () => {
     <>
       <div className="sign-page">
         <div className="sign-left">
-          <div className="sign-logo">
-            <img src="./images/Main-logo.png" alt="" />
-          </div>
+              <h1>Waste Deliver</h1>
           <div className="sign-main">
             <h1>Signup to your Account</h1>
             <p>See what is going on with your business</p>

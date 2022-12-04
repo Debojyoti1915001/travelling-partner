@@ -5,10 +5,7 @@ const Footer = () => {
   return (
     <div className="main-footer">
         <div className="container">
-            <div className="logo">
-                <img src="./images/fav.png" alt="shape" />
-                <img src="./images/Adroid.png" alt="shape" />
-            </div>
+                <h1>Waste Deliver</h1>
             <div className="row">
                 {/*Col1*/}
                 <div className="col">
@@ -55,7 +52,7 @@ const Footer = () => {
             </div>
             <div className="row">
                 <p className="col-sm">
-                    &copy;  All rights reserved by eventio,{new Date().getFullYear()}
+                    &copy;  All rights reserved by Codevengers,{new Date().getFullYear()}
                 </p>
             </div>
             <div className="icon">

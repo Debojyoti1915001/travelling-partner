@@ -3,21 +3,20 @@ import './Intro.css'
 
 const Intro = () => {
   return (
-    <div className='overlay'>
-        <img className='below' src="./images/Books.png" alt="shape" />
-        <img className='above' src="./images/Rectangle.png" alt="shape" />
-        <div className="text">
-            <div className="left">
-            <h1>Learn more and</h1><h1>make success the</h1><h1>result</h1>
-            </div>
-            <div className="right">
-                <p>Adroidconnectz is an online platform to</p>
-                     <p>connect Students with Mentors and provide </p>
-                     <p>them with the opportunity to grow and build</p>
-                     <p> their career.</p>
-            </div>
-        </div>
-    </div>    
+        <section className="showcase">
+          
+          <div className="overlay"></div>
+          <div className="text">
+            <h2>Lets Clean Earth </h2> 
+            <h3>Togetherly and Digitally</h3>
+            <p>Waste Devliver is a project to clean the earth using the latest technologies. We have used Machine Learning to identify waste areas and target them for cleaning</p>
+          </div>
+          <ul className="social">
+            <li><a href="#"><img src={"https://i.ibb.co/x7P24fL/facebook.png"}/></a></li>
+            <li><a href="#"><img src={"https://i.ibb.co/Wnxq2Nq/twitter.png"}/></a></li>
+            <li><a href="#"><img src={"https://i.ibb.co/ySwtH4B/instagram.png"}/></a></li>
+          </ul>
+        </section>    
   )
 }
 

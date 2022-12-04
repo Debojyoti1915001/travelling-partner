@@ -9,11 +9,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 54px;
+    background: #011721;
 }
 
 .boy{
     position: relative;
-    margin-top: 300px;
+    margin-top: -10px;
     margin-left: 70px;
     z-index: 2;
 }
@@ -34,7 +35,7 @@
 
 .intr{
     font-family: 'Poppins';
-    margin-top: 500px;
+    margin-top:50px;
     margin-left: 71px;
     padding: 20px;
 }
@@ -45,6 +46,7 @@
 font-size: 42px;
 line-height: 63px;
 padding: 10px;
+color: aliceblue;
 
 }
 
@@ -87,5 +89,5 @@ font-size: 14px;
 line-height: 21px;
 margin-left: 45px;
 
-color: #000000;
+color: #ededed;
 }
