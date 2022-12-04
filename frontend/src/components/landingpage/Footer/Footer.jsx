@@ -5,10 +5,7 @@ const Footer = () => {
   return (
     <div className="main-footer">
         <div className="container">
-            <div className="logo">
-                <img src="./images/fav.png" alt="shape" />
-                <img src="./images/Adroid.png" alt="shape" />
-            </div>
+                <h1>Waste Deliver</h1>
             <div className="row">
                 {/*Col1*/}
                 <div className="col">

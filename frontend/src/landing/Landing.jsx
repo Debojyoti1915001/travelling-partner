@@ -15,9 +15,6 @@ const Landing = () => {
       <Navbar />
       <Intro />
       <Different />
-      <OurMission />
-      <HowItWorks />
-      <Who />
       <Form />
       <Footer />
     </>

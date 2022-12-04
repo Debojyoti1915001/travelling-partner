@@ -44,16 +44,12 @@
     cursor: pointer;
 }
 
-.logo{
+.container h1{
     font-family: 'Poppins';
     margin-right: 50px;
     margin-left: 20px;
-}
-
-.logo img{
-    margin-bottom: -54px;
-    padding: 10px;
-    cursor: pointer;
+    margin-top: 4rem;
+    color:#011721 ;
 }
 
 .col .list{

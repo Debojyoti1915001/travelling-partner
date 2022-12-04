@@ -13,7 +13,12 @@
 .sign-left{
     margin-left: 11.64%;
 }
-
+.sign-left h1{
+    cursor: pointer;
+    color:   #011721;
+    font-size: 40px;
+    font-weight: 800;
+}
 .sign-main h1{
     font-family: 'Nunito';
     font-style: normal;
