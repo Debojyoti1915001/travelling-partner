@@ -6,7 +6,7 @@ import { NavLink} from 'react-router-dom';
 const Navbar = () => {
   return (
     <div className="nav-main">
-        <div className="nav-left">Logo</div>
+        <div className="nav-left">Waste Deliver</div>
         <div className="nav-center">
            <div className="nav-list">
               <ul>

@@ -7,15 +7,15 @@ const Footer = () => {
         <div className="container">
             <div className="logo">
                 <img src="./images/fav.png" alt="shape" />
-                <img src="./images/Adroid.png" alt="shape" />
+                <img src="./images/.png" alt="shape" />
             </div>
             <div className="row">
                 {/*Col1*/}
                 <div className="col">
                     <h4>Products</h4>
                     <ul className="list">
-                        <li>Find Jobs</li>
-                        <li>Do Cources</li>
+                        <li>Find Waste</li>
+                        <li>Learn ML</li>
                         <li>Integrations</li>
                         <li>Pricing</li>
                     </ul>
@@ -23,9 +23,9 @@ const Footer = () => {
                 <div className="col">
                     <h4>Company</h4>
                     <ul className="list">
-                        <li>Our Rooms</li>
+                        <li>Our Services</li>
                         <li>Stories</li>
-                        <li>For Hosts</li>
+                        <li>For Cleaner</li>
                         <li>Referral Partners</li>
                         <li>Preffered Vendor</li>
                     </ul>
@@ -55,7 +55,7 @@ const Footer = () => {
             </div>
             <div className="row">
                 <p className="col-sm">
-                    &copy;  All rights reserved by eventio,{new Date().getFullYear()}
+                    &copy;  All rights reserved by Codevengers,{new Date().getFullYear()}
                 </p>
             </div>
             <div className="icon">

@@ -55,9 +55,7 @@ const Login = () => {
     <>
         <div className="login-page">
             <div className="login-left">
-                <div className="login-logo">
-                    <img src="./images/Main-logo.png" alt="" />
-                </div>
+                   <h1>Waste Deliver</h1>
                 <div className="login-main">
                             <h1>Login to your Account</h1>
                             <p>See what is going on with your business</p>

@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div className="header">
             <div className="header-left">
-                <img className='header-logo' src="./images/logo.png" alt="" />
+                 <h1>Waste Deliver</h1>
                 <div className="search">
                     <input type="text" placeholder='Search' />
                     <IconButton><SearchIcon/></IconButton>
