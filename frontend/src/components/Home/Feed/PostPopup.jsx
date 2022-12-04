@@ -11,7 +11,8 @@ const PostPopup = (props) => {
   return (
     <>
       <div className="main-pop">
-        <form action="/all-post" method="POST" enctype="multipart/form-data">
+      <iframe name="hiddenFrame" class="hide"></iframe>
+        <form action="/all-post" method="POST" enctype="multipart/form-data" target="hiddenFrame">
           <div className="popup-main">
             <div className="popup-header">
               <h1>Add Photos</h1>

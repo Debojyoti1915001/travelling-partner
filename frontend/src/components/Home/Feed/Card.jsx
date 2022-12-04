@@ -3,6 +3,7 @@ import './Card.css'
 import sdata from './sdata.json'
 
 const Card = (props) => {
+    
     return (
         <div className="card">
             <div className="card-top">
