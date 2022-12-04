@@ -52,7 +52,7 @@ const Footer = () => {
             </div>
             <div className="row">
                 <p className="col-sm">
-                    &copy;  All rights reserved by eventio,{new Date().getFullYear()}
+                    &copy;  All rights reserved by Codevengers,{new Date().getFullYear()}
                 </p>
             </div>
             <div className="icon">

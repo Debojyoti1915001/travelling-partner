@@ -17,15 +17,11 @@
 }
 
 .nav-left{
-    font-family: 'Poppins';
-    padding: 8px;
-    margin: 16px;
-    font-weight: 400;
-    color: #DC3545;
-    font-size: 32px;
-    line-height: 48px;
-    font-style: normal;
-    cursor: pointer;
+        cursor: pointer;
+        color:   #011721;
+        font-size: 30px;
+        font-weight: 500;
+        margin-left: 20px;
 }
 
 
@@ -36,7 +32,7 @@
     flex: 1;
     align-items: center;
     justify-content: center;
-    margin-left: 350px;
+    margin-left: 250px;
     font-weight: 500;
     font-family: 'Poppins';
 }

@@ -11,17 +11,17 @@ const Different = () => {
                 <img src="./images/arrow.png" alt="" />
                 <h4>INTEREST & MOTIVATION</h4>
             </div>
-            <p>It provides opportunity to students to know their interest and motivate them to accomplish their dreams</p>
+            <p>It provides unique oppurtunity to serve the mother earth</p>
             <div className="para">
                 <img src="./images/arrow.png" alt="" />
                 <h4>BENEFITS</h4>
             </div>
-            <p>It provides students with the addons like peer connection,student mentor relationships, internships, Hackathons, Higher studies,  training jobs , tutorial, course materials.</p>
+            <p>It will benifits the heakth and to keep sanitazation surrounding our environment</p>
             <div className="para">
                 <img src="./images/arrow.png" alt="" />
                 <h4>FOCUS ON EVERYONE</h4>
             </div>
-            <p>It mainly focuses on students, help them to solve their problems and make them thinker and motivator to work in the direction of Research and startup.</p>
+            <p>It mainly focuses on cleanliness with the usage of modern technologies and so them everyone can take part in cleaniless.</p>
         </div>
         <div>
             <img className="boy" src="./images/boy.png" alt="" />
