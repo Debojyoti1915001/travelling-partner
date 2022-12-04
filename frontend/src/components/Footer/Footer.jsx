@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="container">
             <div className="logo">
                 <img src="./images/fav.png" alt="shape" />
-                <img src="./images/Adroid.png" alt="shape" />
+                <img src="./images/.png" alt="shape" />
             </div>
             <div className="row">
                 {/*Col1*/}
