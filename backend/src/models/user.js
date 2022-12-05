@@ -3,6 +3,7 @@ const User = mongoose.model(
     "User",
     mongoose.Schema({
         name: { type: String },
+        type: { type: Number },
         email: { type: String },
         password: { type: String },
         isEmailVerified: { type: Boolean, default: false },

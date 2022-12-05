@@ -1,5 +1,5 @@
 .card {
-  width: 882px;
+  width: auto;
   height: 630px;
   background: #ffffff;
   border-radius: 2px;
@@ -21,8 +21,9 @@
 
 .cardtop-left img {
   height: 54%;
-  width: 142%;
+  width: 100%;
   margin-right: -237px;
+  margin-top: 9rem;
 }
 
 .cardtop-right {
@@ -44,7 +45,7 @@
 }
 
 .intro-name {
-  display: flex;
+ 
 }
 
 .intro-name {
@@ -54,6 +55,7 @@
   font-size: 14px;
   line-height: 22px;
   color: #171414;
+  margin-left: -480px !important;
 }
 
 .intro-name img {
@@ -80,10 +82,11 @@
   line-height: 22px;
   color: #171414;
   opacity: 0.6;
+  margin-left: -30rem;
 }
 
 .card-mid p {
-  margin: 20px 32px 16px 32px;
+ 
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;

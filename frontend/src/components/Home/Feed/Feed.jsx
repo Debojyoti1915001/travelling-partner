@@ -93,10 +93,15 @@ const Feed = ({data}) => {
                     
                     <Card 
                         id  = {item._id}
+                        locality={item.locality}
+                        percentageWaste={item.percentageWaste}
+                        city={item.city}
+                        pin={item.pin}
+                        state={item.state}
+                        country={item.country}
                         imgsrc = {item.pic}
-                        uname = {sdata[0].uname}
+                        name = {item.name}
                         mainimg = {sdata[0].mainimg}
-                        about = {sdata[0].about}
                         intro = {item.desc}
                     />
                     ))}   

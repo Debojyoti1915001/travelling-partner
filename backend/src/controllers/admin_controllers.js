@@ -21,9 +21,9 @@ module.exports.login_get = async (req, res) => {
   res.send("Signup")
 }
 module.exports.login_post = async (req, res) => {
-  const name = req.body.name
+  const email = req.body.email
   const password = req.body.password
-  if (name === "admin" && password === "admin") {
+  if (email === "admin" && password === "admin") {
     await res.cookie('admin', "admin", { httpOnly: true })
     await res.send({"message":"Logged In"})
     return
@@ -48,16 +48,23 @@ module.exports.allpost_get = async (req, res) => {
   res.json(post)
 }
 module.exports.deletepost_get = async (req, res) => {
-  if(req.cookies.admin===undefined){
-    await res.send({"message":"Failed to Access"})  
-    return
-  }
+
+  // console.log("yes")
   try {
+    if(!req.cookies.admin==='admin'){
+      console.log(req.cookies.admin)
+      await res.send({"message":"Failed to Access"})  
+      return
+    }
+    // console.log("yes")
     const id=req.params.id;
-    await Post.findByIdAndDelete(id)
+    const post=await Post.deleteOne( {"_id":id});
+    console.log(post)
     return res.status(200).json({"message":"Deleted Post"});
+  
   } catch (err) {
-    return res.status(400).send(e.toString());
+    console.log(err)
+    return res.status(400).send(err);
   }
 }
 

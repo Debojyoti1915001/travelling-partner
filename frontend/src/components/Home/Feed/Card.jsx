@@ -11,28 +11,26 @@ const Card = (props) => {
                     <img src={props.imgsrc} alt=""/>
                     <div className="intro">
                         <div className='intro-name'>
-                            <h2>{props.uname}</h2>
-                            <img src="./images/dot.png" alt="" />
-                            <span>Follow</span>
+                            <h2>{props.name}</h2>
+                            <p>{props.locality} </p>
+                            <p>{props.pin}</p>
+                            <p>{props.city}</p>
+                            <p>{props.state}</p>
+                            <p>{props.country}</p>
                         </div>
                         <div className="about">
                             <p>{props.about}</p>
-                            
                         </div>
-                        
                     </div>
                 </div>
                 <div className="cardtop-right">
-                    <img src="./images/dots.png" alt="" />
-                    <p>3 minutes ago</p>
+                    <p>Location</p>
                 </div>
             </div>
+
             <div className="card-mid">
-                <form action={"/updatepost/"+props.id} method="POST">
-                <textarea name="desc">{props.intro}</textarea>
-                <button className='post'>Edit</button>
-                </form>
-                <img src={props.mainimg} alt="" />
+            <iframe name="hiddenFrame" class="hide"></iframe>
+                <a className='post' target="hiddenFrame" href={"http://localhost:8080/admin/delete/"+props.id}>Delete</a>
             </div>
             <div className='xline'></div>
             <div className="card-bottom">
@@ -41,9 +39,11 @@ const Card = (props) => {
                     <form action="">
                         <input className='cardinput' type="text" placeholder='Add comment ...' />
                     </form>
-                    <img className='emoji' src="./images/emoji.png" alt="" />
-                    <img className='pictures' src="./images/pictures.png" alt="" />
                 </div>
+                  <div>
+            <iframe name="hiddenFrame" class="hide"></iframe>
+                <a className='post' target="hiddenFrame" href={"http://localhost:8080/admin/delete/"+props.id}>Delete</a>
+            </div>
                 <div className="share">
                     <img src="./images/clap.png" alt="" />
                     <p>126</p>

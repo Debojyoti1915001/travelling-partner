@@ -12,7 +12,7 @@ const Post = mongoose.model(
         country:{type: String},
         worker:[{
             type:mongoose.Schema.Types.ObjectId,
-            ref:'worker'
+            ref:'user'
         }],
     })
 );

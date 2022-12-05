@@ -1,5 +1,4 @@
 const User = require("../models/user");
-const Worker = require("../models/worker");
 const Post = require("../models/post");
 const axios =require('axios');
 const { sendMailToWorker, sendMailToUser } = require('../config/nodemailer.js')
@@ -200,7 +199,7 @@ module.exports.mailWorker = async (req, res, next) => {
   try {
     const user = req.user;
     const worker_id=req.params.id
-    let worker = await Worker.findById(worker_id);
+    let worker = await User.findById(worker_id);
     sendMailToWorker(worker,user,req.hostname, req.protocol)
     sendMailToUser(worker,user,req.hostname, req.protocol)
     return res.status(200).json({message:"Success"});
